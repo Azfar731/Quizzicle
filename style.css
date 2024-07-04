@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    font-family: Karla;
+
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+     
+}
+
+
+hr{
+    border: 0.79px solid #DBDEF0    
+    
+}
+
+
+.blob {
+    position: absolute;
+    width: 297px;
+    height: 235px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 100px;
+    transform: rotate(15deg);
+    opacity: 0.5;
+}
+
+#topblob{
+    
+    right:-100px;
+    top: -100px;
+    background-color: #FFFAD1;
+
+    /* left: 184.85px; */
+}
+
+#bottomblob{
+    background-color: #DEEBF8;
+    bottom:-100px;
+    left:-100px;
+}
+
+.startPageContent {
+    position:absolute;
+    top: 30%;
+    left: 45%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.startPageTitle{
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 36.53px;
+    text-align: center;
+
+}
+
+button {
+    border-style: none;
+    border-radius: 15px;
+    opacity: 0px;
+    background: #4D5B9E; 
+    font-family: Inter;
+    text-align: center;
+    color: #F5F7FB;
+
+}
+
+.startButton {
+    width: 193px;
+    height: 52px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+
+}
+
+
+.quizContainer{
+    margin:40px 75px;
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap:32px;
+    overflow-y: auto;
+}
+
+.allQuestions {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+
+.question {
+    font-family: Karla;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 18.7px;
+    text-align: left;
+    color: #293264;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the label to look like a button */
+.radio-button {
+    width: 87px;
+    height: 20px;
+    border-radius: 8px;
+    color: #293264;
+    border: 1px solid #4D5B9E;
+    text-align: center;
+
+
+}
+
+.quizFinished{
+    opacity: 50%;
+}
+
+/* Change background and color when the radio button is checked */
+/* input[type="radio"]:checked + .radio-button {
+    background: #D6DBF5;
+} */
+/* 
+input[type="radio"]:checked + .quizFinished {
+    background: #F8BCBC;
+
+} */
+
+.selectedOption {
+    background: #D6DBF5;
+}
+.correctAnswer{
+    background: #94D7A2;
+}
+
+.wrongAnswer{
+    background: #F8BCBC;
+    background: #fdd4d4;
+}
+
+.answersForm {
+    display: flex;
+    gap: 13px;
+    margin:15px 0px;
+    
+}
+
+.checkAnswerButton{
+    width: 120px;
+    height: 35px;
+    font-size: 10.24px;
+    font-weight: 600;
+    line-height: 12.39px;
+    
+}
+
+.buttonAndScore {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonAndScore > span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 15.49px;
+    text-align: center;
+    margin-right: 7px
+
+}
+
+.swal-wide{
+    background:  #f5f7fa;
+    border-radius: 20px;
+    width:500px ;
+}
+
+.swal2-confirm {
+     /* Change the background color */
+    color: white; /* Change the text color */
+    border: none; /* Remove the border */
+    padding: 10px 20px; /* Add padding */ /* Add border radius */
+    font-size: 16px; /* Change font size */
+    cursor: pointer; /* Add cursor pointer */
+}
